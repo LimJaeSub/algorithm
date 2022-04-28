@@ -195,7 +195,8 @@ int main()
 }
 ```
 
-[##_Image|kage@lxXlB/btrAJSTsBMr/PYTknEUK8zqCLMDk1fuSBK/img.png|CDM|1.3|{"originWidth":714,"originHeight":502,"style":"alignCenter"}_##]
+
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720150-18e1a33f-2483-4252-b1c0-a4cee2edb5c8.png)
 
 최대 유량이 2로 나오는 것을 알 수 있다.
 
@@ -204,7 +205,7 @@ int main()
 하지만, dfs방식을 사용하는데는 한가지 문제점이 있다.
 
 ![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720161-ccd7092c-7a28-4bca-ae3a-7f05d5e5269f.png)
-usercontent.com/76646095/165720150-18e1a33f-2483-4252-b1c0-a4cee2edb5c8.png)
+
 
 
 해당 그림을 예시로 들면
