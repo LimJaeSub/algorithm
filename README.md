@@ -33,7 +33,7 @@
 
 기본적인 네트워크 플로우의 동작 방식부터 알아보겠다.
 
-[##_Image|kage@dtXfcC/btrAlhN7RMS/pQiar2IexEt3JfhD2JgXz1/img.png|CDM|1.3|{"originWidth":818,"originHeight":438,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720091-2e67ac1e-1677-434f-a786-16417af27753.png)
 
 소스 s에서 싱크 t까지 가는 네트워크의 최대 유량을 계산하는 과정이다
 
@@ -47,7 +47,7 @@ s->a->t에서 비록 a->t의 용량이 2지만 s->a에서의 용량이 1이라 1
 
 그러나 만약 알고리즘이 s->a->b->t를 탐색하게 되면
 
-[##_Image|kage@bLA3YR/btrAroSyyLP/Kij9Abg62v3oISGAkrTuSk/img.png|CDM|1.3|{"originWidth":782,"originHeight":422,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720107-3f4c851d-60a9-4816-86d2-bf46788a0bba.png)
 
 s->b에 유량을 보내도 b에서 t로가는 잔여 용량이 없기 때문에 싱크 T까지 가는 최대 유량이 1이되는 오답이 발생한다.
 
@@ -79,21 +79,21 @@ ex) a->b의 유량, 용량이 각각 1이라면 역간선 b->a의 유량은 -1�
 
 1\. 네트워크에 있는 모든 간선의 유량을 0으로 초기화하고, 역간선의 유량도 0으로 초기화시킨다.
 
-[##_Image|kage@NZeO4/btrAqI5nDSu/EySepZo2TkHM5D1KkG9nK1/img.png|CDM|1.3|{"originWidth":426,"originHeight":293,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720117-a58453a3-d328-4de1-9e9f-17c48c29e989.png)
 
 2\. DFS를 사용해 s->a->b->T 의 경로를 탐색한다, 이후 최소 잔여 용량을 싱크 T에 흘려보낸다.
 
-[##_Image|kage@bt8VeE/btrAsraKHyQ/RyFZLnTm8yt8HYpLP9kH41/img.png|CDM|1.3|{"originWidth":503,"originHeight":281,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720122-7acaa17a-eedd-45a6-b85a-72c5a7d7f1d6.png)
 
 3\. 역간선에 음수의 유량 -1을 추가로 흘려보낸다
 
 이따, b->a의 유량이 -1이 되고 용량이 0이므로 추가로 1의 유량이 전달이 가능하다.
 
-[##_Image|kage@kFjuS/btrArJbEkNE/FNjx5L4Gyhw5joZhkPdTk0/img.png|CDM|1.3|{"originWidth":417,"originHeight":409,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720128-271fb08e-8e61-403f-98b2-4d2783488691.png)
 
 4\. 결과적으로 s->b->a->T로 1의 유량이 전달이 가능하면서 a와 b는 서로 상쇄되는 것을 알 수 있다.
 
-[##_Image|kage@bxy2nc/btrAplQn1a8/yOJXRpvydQ8HhjZo9p7D9K/img.png|CDM|1.3|{"originWidth":467,"originHeight":323,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720138-3b405d31-ad87-4fc4-925d-2f7a0fa26f01.png)
 
 위의 특성을 이용해 C++기반으로 코드를 작성해보겠다.
 
@@ -195,7 +195,8 @@ int main()
 }
 ```
 
-[##_Image|kage@lxXlB/btrAJSTsBMr/PYTknEUK8zqCLMDk1fuSBK/img.png|CDM|1.3|{"originWidth":714,"originHeight":502,"style":"alignCenter"}_##]
+
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720150-18e1a33f-2483-4252-b1c0-a4cee2edb5c8.png)
 
 최대 유량이 2로 나오는 것을 알 수 있다.
 
@@ -203,7 +204,9 @@ int main()
 
 하지만, dfs방식을 사용하는데는 한가지 문제점이 있다.
 
-[##_Image|kage@bdPdDi/btrAJTE7Oxp/4fsY4n3IfEnDrrGxpI9MHk/img.png|CDM|1.3|{"originWidth":354,"originHeight":237,"style":"alignCenter"}_##]
+![img1 daumcdn](https://user-images.githubusercontent.com/76646095/165720161-ccd7092c-7a28-4bca-ae3a-7f05d5e5269f.png)
+
+
 
 해당 그림을 예시로 들면
 
