@@ -81,7 +81,7 @@ print("time :",end3-start3);
 
 해당 코드로 각각 정렬된리스트,랜덤리스트,역정렬리스트를 통해 비교하였다.
 
-[##_Image|kage@c0XbSH/btrBm81SQvk/kh46ECO48BXH9OZQ6sum3K/img.png|CDM|1.3|{"originWidth":308,"originHeight":108,"style":"alignCenter","caption":"num=32,64"}_##]
+images.githubusercontent.com/76646095/166944612-cf9e79b7-d901-48f4-84e9-1ccdc6166baf.png)
 
 그러나 너무 작은 표본에서는 시간이 정확히 측정되지 않으며, 너무 높은 숫자인 1048576에서는 측정에 너무 오랜시간이 걸린다.
 
@@ -208,7 +208,7 @@ insertSort일때
 | 524288  | 14710.625     | 51185.25   | 6025.472   |
 | 1048576 | 73553.125     | 255926.25  | 24101.888  |
 
-[##_Image|kage@rnOze/btrBk8uUzQG/CvpP3ZZ3EimGXjTpkH2AL1/img.png|CDM|1.3|{"originWidth":1600,"originHeight":1200,"style":"alignCenter"}_##]
+![reverse-time](https://user-images.githubusercontent.com/76646095/166944326-7306d0fa-1610-4d23-93ce-e3c92e5407dc.png)
 
 <randomTime>
 
@@ -229,7 +229,7 @@ insertSort일때
 | 524288  | 14589.3125    | 16637.0048 | 5975.7824  |
 | 1048576 | 72946.5625    | 66548.0192 | 23903.1296 |
 
-[##_Image|kage@bydazj/btrBkCQzbR7/QLgpZ51RrFjOqrfO8gYUA1/img.png|CDM|1.3|{"originWidth":1600,"originHeight":1200,"style":"alignCenter"}_##]
+![random-time](https://user-images.githubusercontent.com/76646095/166944340-c4d85486-189b-41e6-91ca-7267ab6a5859.png)
 
 <SortTime>
 
@@ -250,4 +250,4 @@ insertSort일때
 | 524288  | 14528.0625    | 7934.848   | 5950.6944  |
 | 1048576 | 72640.3125    | 31739.392  | 23802.7776 |
 
-[##_Image|kage@cWzSwO/btrBmwhOoQN/Zl2cWOa1jO43HQq4KdSnK1/img.png|CDM|1.3|{"originWidth":1600,"originHeight":1200,"style":"alignCenter"}_##]
+![sort-time](https://user-images.githubusercontent.com/76646095/166944351-fb9ba812-e4e4-4a5a-84ed-e7c97626dd55.png)
