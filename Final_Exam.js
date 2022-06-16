@@ -101,10 +101,9 @@ console.log("면적 총합:"+accAreSum);
 // 면적도가 높은 두 가지를 골라서 그 사이의 랜덤한 값을 추출한다.
 
 function extraction(arr){
-    for(var i=0;i<arr.length;i++){
-        let temp;
-        
-    }
+    arr.sort((a,b)=>b-a);
+    return [arr[0],arr[1]];
+    
 }
 
 
