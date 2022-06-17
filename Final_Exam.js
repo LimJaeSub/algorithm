@@ -21,10 +21,10 @@ function line_function(x){
 
 
 // 초기 후보해 생성
-function RandomCandidate(){ 
+function RandomCandidate(min,max){ 
     for(var i=0;i<4;i++){
         let isInput = true;
-        const randomnum = Math.floor(Math.random()*30)+1;
+        const randomnum = Math.floor(Math.random()*max)+min;
         for(var j=0;j<4;j++){
             if(randomnum==candidatenum[j]){
                 i--;
@@ -63,47 +63,39 @@ function CalculateArea(accSum,accuracy){
 }
 
 
-
-// ==========================================================
-
-
-
-//후보해 랜덤 생성
-RandomCandidate();
-//적합도 계산
-ACadjust(candidatenum);
-
-
-
-//적합도 총 합
-const accSum = accuracy.reduce(function add(sum,currValue){
-    return sum+currValue;
-}) 
-
-
-
-//원반 면적 계산
-CalculateArea(accSum,accuracy);
-
-
-
-// 면적의 총합 계산
-const accAreSum = accuracyArea.reduce(function add(sum,currValue){
-    return sum+currValue;
-}) 
-
-console.log(candidatenum);
-console.log(accuracy);//적합도
-console.log(accuracyArea);//면적
-console.log("면적 총합:"+accAreSum);
-
-
-// 면적도가 높은 두 가지를 골라서 그 사이의 랜덤한 값을 추출한다.
-
+//최대 최소
 function extraction(arr){
-    arr.sort((a,b)=>b-a);
-    return [arr[0],arr[1]];
-    
+    arr.sort((a,b)=>a-b);
+    return [arr[0],arr[1]];  
+}
+
+
+
+function main(min,max){
+    RandomCandidate(min,max); //후보해 생성
+    ACadjust(candidatenum); //적합도 계산
+
+    const accSum = accuracy.reduce(function add(sum,currValue){
+        return sum+currValue;
+    }) //적합도 총합
+
+    CalculateArea(accSum,accuracy); //원반 면적 계산
+
+    const accAreSum = accuracyArea.reduce(function add(sum,currValue){
+        return sum+currValue;
+    }) //면적의 총합
+
+    const newmin = extraction(accuracy)[0]; 
+    const newmax = extraction(accuracy)[1];//후보해 재생성
+
+    if((extraction(accuracyArea)||extraction(accuracyArea))>99){
+        return 1;
+    }
+    else{
+        main(newmin,newmax);
+    }
+
+
 }
 
 
