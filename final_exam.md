@@ -85,7 +85,7 @@ var myChart = new Chart(context, {
 );
 ```
 
-[##_Image|kage@boBQhj/btrEGKrFn7t/yD00yYynOHjbv680W3k64k/img.png|CDM|1.3|{"originWidth":942,"originHeight":939,"style":"alignCenter"}_##]
+![img1](https://user-images.githubusercontent.com/76646095/174232247-55364ff7-e618-4b63-9b8a-4623104c4147.png)
 
 선형회귀는 일차 직선방정식 y=mx+b를 사용한다
 
@@ -99,7 +99,7 @@ y=종속변수
 
 위 방정식 기준으로 최소제곱법의 기울기 m의 공식은
 
-[##_Image|kage@bsTeQV/btrEJvUiMMs/HSCsTPQptV0cRJC9yhK5c0/img.png|CDM|1.3|{"originWidth":297,"originHeight":162,"style":"alignCenter","caption":"최소제곱법 기울기 공식"}_##]
+![img2](https://user-images.githubusercontent.com/76646095/174232250-4e87b628-cb90-4d85-92b2-9908cef84b6b.png)
 
 | Hours | Marks | xi-x   | yi-y      | (xi-x)(yi-y) | (x1-x)^2 |
 | ----- | ----- | ------ | --------- | ------------ | -------- |
@@ -225,24 +225,24 @@ function main(min,max){
 }
 ```
 
-[##_Image|kage@U5xp3/btrE294HKhI/hGuxocaEpUzFcizzrXIiRK/img.png|CDM|1.3|{"originWidth":369,"originHeight":67,"style":"alignCenter","caption":"전역변수"}_##]
+![img3](https://user-images.githubusercontent.com/76646095/174232252-1dd3855a-ce01-415d-8d09-c863df399280.png)
 
 각 주석에 쓰인 내용들을 넣을 전역변수다
 
-[##_Image|kage@JOzmw/btrE1XDI0PD/9ckRp6Jrfq5rwUH5hQen01/img.png|CDM|1.3|{"originWidth":497,"originHeight":428,"style":"alignCenter"}_##]
+![img4](https://user-images.githubusercontent.com/76646095/174232254-57b3a481-4ee6-448e-b5e1-cff1626d811f.png)
 
 초기 후보해를 생성해주는 함수다.
 
 후보해의 중복을 막기 위해 중복을 제거하는 기능을 넣어주었다.
 
-[##_Image|kage@bnkWUK/btrEZdtAeyz/sKlml1jSQ84JuzbxsyLEQk/img.png|CDM|1.3|{"originWidth":759,"originHeight":177,"style":"alignCenter"}_##]
+![img5](https://user-images.githubusercontent.com/76646095/174232256-685013b6-451d-4ed6-9ca8-bb04108ae352.png)
 
 역수를 취해 리턴값이 적을수록 적합도가 높은 것으로 만들었다.
 
-[##_Image|kage@OeGow/btrE3L212hK/Ft0Ve7u6yk1kW3gC51Czvk/img.png|CDM|1.3|{"originWidth":386,"originHeight":292,"style":"alignCenter"}_##]
+![img6](https://user-images.githubusercontent.com/76646095/174232259-fc1f4fa2-823e-4f42-a447-d810717955f9.png)
 
 원반의 면적을 계산하고 면적에 따라 새로운 후보해를 추출하기 위해 최대/최소를 추출하는 함수다.
 
-[##_Image|kage@HoXx2/btrE3HNdkBU/SlDbHvCYkJdCpgkJHRvnt0/img.png|CDM|1.3|{"originWidth":569,"originHeight":506,"style":"alignCenter"}_##]
+![img7](https://user-images.githubusercontent.com/76646095/174232260-564bde03-dcb1-4120-97c5-571fc5fdaa7b.png)
 
 main의 재귀를 통해 후보해의 범위를 재정의하여 정확도를 높이는 방법을 사용하였다.
