@@ -17,9 +17,15 @@
 // map.clear();
 // console.log(map);
 
+// set : key/value를 이용해 map에 값을 저장
+// size : map의 크기를 반환
+// get : key에 해당하는 값을 반환, 없으면 undefined
+// has : key가 존재하면 true/ 없으면 false
+// delete : value,key에 해당하는 값을 삭제
+// clear : map 안의 모든 요소 삭제
 
-let map2 = new Map(['egg',500],['banana',300],['apple',700]);
+let map2 = new Map(["egg", 500], ["banana", 300], ["apple", 700]); // 위와 같은 형태로 선언 가능
 
 console.log(map2);
 const testobj = map2.keys();
-console.log(testobj);
+console.log(testobj.next().value);
