@@ -15,15 +15,9 @@ const str = input.split(',').slice(1);
 
 // console.log(answer);
 
-answer = str.filter(it=>{
-    for(let i=0;i<str.length;i++){
-        //console.log(str.indexOf(str[i]));
-        console.log(i);
-        if(str.indexOf(str[i])===i){
-            return true;
-        }
-    }
-})
+answer = str.filter((it,index)=>{
+    if(str.indexOf(it)===index) return true;
+});
 
 console.log(answer);
 
